@@ -122,3 +122,19 @@ form{
 .preferences-base li{
     margin: .5rem;
 }
+
+.communities{
+    font-size: 400%;
+    margin: .5rem;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.rec{
+    font-size: 150%;
+    margin: 1rem;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: black;
+}
