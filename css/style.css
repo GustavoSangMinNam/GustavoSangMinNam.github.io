@@ -62,7 +62,7 @@ img{
     border-color: black;
     display: flex;
     flex-direction: row;
-    align-items: space-evenly;
+    align-items: center;
 }
 
 .menu li{
