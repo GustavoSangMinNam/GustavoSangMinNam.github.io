@@ -35,6 +35,10 @@ header.store{
     border-color: black;
 }
 
+.disponivel li{
+    margin: .5rem;
+}
+
 .start{
     margin: 1.5rem 1.5rem .5rem 1.5rem;
     padding: 2rem;
