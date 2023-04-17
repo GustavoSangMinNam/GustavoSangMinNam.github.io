@@ -157,6 +157,12 @@ form{
 
 .teko{
     font-family: 'Teko', sans-serif;
+    background-color: #940707;
+}
+
+.teko1{
+    font-family: 'Teko', sans-serif;
+    background-color: #079494;
 }
 
 .azul{
@@ -176,4 +182,11 @@ form{
 }
 .marinho{
     color: #00cfcf;
+}
+
+.bodycolor{
+    display:flex;
+    border-left:3rem;
+    border-right:3rem;
+    background-color: #079494;
 }
