@@ -142,3 +142,19 @@ form{
     border-style: solid;
     border-color: black;
 }
+
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.rokkitt{
+    font-family: 'Rokkitt', serif;
+}
+
+.sanchez{
+    font-family: 'Sanchez', serif;
+}
+
+.teko{
+    font-family: 'Teko', sans-serif;
+}
