@@ -158,3 +158,22 @@ form{
 .teko{
     font-family: 'Teko', sans-serif;
 }
+
+.azul{
+    background-color: #079494;
+}
+.branco{
+    background-color: white;
+}
+.preto{
+    color: black;
+}
+.vermelho{
+    background-color: #940707;
+}
+.roxo{
+    color: #4d057a;
+}
+.marinho{
+    color: #00cfcf;
+}
