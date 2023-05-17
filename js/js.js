@@ -1,10 +1,20 @@
-<script>
-  document.getElementById('search-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+function check_full() {
+  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  var enviarButton = document.querySelector('input[type="submit"]');
 
-    var searchTerm = document.getElementById('search-input').value;
-    var searchURL = 'https://www.google.com/search?q=' + encodeURIComponent(searchTerm);
+  function updateButtonState() {
+    var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    enviarButton.disabled = checkedCheckboxes.length === 0;
+  }
 
-    window.location.href = searchURL;
+  checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', updateButtonState);
   });
-</script>
+
+  updateButtonState();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  check_full();
+  updateButtonState();
+});
