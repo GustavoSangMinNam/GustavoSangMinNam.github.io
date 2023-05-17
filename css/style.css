@@ -68,7 +68,7 @@ img{
 .menu li{
     margin-left: 1.5rem;
     margin-top: 1.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1.25rem;
     margin-right: 1.5rem;
 }
 
@@ -173,6 +173,7 @@ form{
 }
 .preto{
     color: black;
+    font-size: 1.5rem;
 }
 .vermelho{
     background-color: #940707;
