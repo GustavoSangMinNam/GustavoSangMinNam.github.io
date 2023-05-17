@@ -142,3 +142,51 @@ form{
     border-style: solid;
     border-color: black;
 }
+
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+.rokkitt{
+    font-family: 'Rokkitt', serif;
+}
+
+.sanchez{
+    font-family: 'Sanchez', serif;
+}
+
+.teko{
+    font-family: 'Teko', sans-serif;
+    background-color: #940707;
+}
+
+.teko1{
+    font-family: 'Teko', sans-serif;
+    background-color: #079494;
+}
+
+.azul{
+    background-color: #079494;
+}
+.branco{
+    background-color: white;
+}
+.preto{
+    color: black;
+}
+.vermelho{
+    background-color: #940707;
+}
+.roxo{
+    color: #4d057a;
+}
+.marinho{
+    color: #00cfcf;
+}
+
+.bodycolor{
+    display:flex;
+    border-left:3rem;
+    border-right:3rem;
+    background-color: #079494;
+}
