@@ -50,14 +50,7 @@ header.store{
 
 img{
     border-radius: 16px;
-    background-size: cover;
-    transition: all 0.3s ease;
 }
-figure a:hover img {
-    cursor: pointer;
-    position: relative;
-    transform: scale(1.2);
-  }  
 
 .menu{
     position: fixed;
