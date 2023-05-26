@@ -11,6 +11,17 @@ body{
 
 header{
     font-size: 500%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header a:first-child{
+    align-self: center;
 }
 
 header.store{
