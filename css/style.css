@@ -203,7 +203,7 @@ form{
     font-size: 1.5rem;
 }
 .vermelho{
-    background-color: ;
+    background-color: red;
 }
 .roxo{
     color: #4d057a;
@@ -220,11 +220,11 @@ form{
 }
 
 #navbar {
-    background-color:#940707; /* Red background color */
-    position: fixed; /* Make it stick/fixed */
-    bottom: 0; /* Stay on bottom */
-    width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    background-color:#940707;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: bottom 0.3s;
   }
   
   /* Style the navbar links */

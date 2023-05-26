@@ -9,23 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Rokkitt&family=Sanchez&family=Teko&display=swap" rel="stylesheet">
-    <style>
-        .menu {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 50px;
-            background-color: #000;
-            color: #fff;
-            transition: top 0.3s ease-in-out;
-        }
-
-        .hide-menu {
-            top: -50px;
-        }
-    </style>
     <title>LFG: Store</title>
+    <script src="../js/js.js"></script>
 </head>
 <body class="bodycolor">
     <header class="teko1"><a href="../index.html">LFG</a></header>
@@ -66,25 +51,5 @@
     </ul>
     <p class="filler"></p>
 
-    <script>
-        var scrollTimeout;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            var navbar = document.getElementById("navbar");
-            
-            clearTimeout(scrollTimeout);
-            
-            if (prevScrollpos > currentScrollPos) {
-                navbar.classList.remove("hide-menu");
-            } else {
-                scrollTimeout = setTimeout(function() {
-                navbar.classList.add("hide-menu");
-                }, 200); // Adicionado um atraso de 200ms antes de ocultar o menu
-        }
-        
-        prevScrollpos = currentScrollPos;
-        };
-
-    </script>
 </body>
 </html>
