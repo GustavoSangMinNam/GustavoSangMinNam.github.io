@@ -103,6 +103,7 @@ img{
     border-style: solid;
     border-radius: 6px;
     border-color: black;
+    background-color: #fff; /* Primeira ideia de como deixar os fundos de cada sinopse */
 }
 
 .sinopse-list{
@@ -113,6 +114,7 @@ img{
     border-style: solid;
     border-radius: 6px;
     border-color: black;
+    background-color: #fff;
 }
 
 .sinopse-list li{
@@ -238,3 +240,33 @@ form{
     background-color: #ddd;
     color: black;
   }
+
+.page{
+    color: #fff;
+    font-size: xx-large;
+}
+
+.hover-container{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.hover-container img{
+    display: block;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
