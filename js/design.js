@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const container = document.querySelector('.hover-container')
-    const overlay = document.querySelector('.overlay')
+    const container = document.querySelectorAll('.hover-container')
+    
+    container.forEach(container => {
+        const overlay = container.querySelector('.overlay')
 
-    container.addEventListener('mouseenter', () => {
-        overlay.style.opacity = '1'
-    })
-
-    container.addEventListener('mouseleave', () => {
-        overlay.style.opacity = '0'
+        container.addEventListener('click', () => {
+            overlay.classList.toggle('active-overlay')
+        })
     })
 })
