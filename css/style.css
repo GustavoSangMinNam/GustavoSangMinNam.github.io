@@ -163,7 +163,7 @@ form{
 
 .rec{
     font-size: 150%;
-    margin: 1rem;
+    margin: .5rem;
     border-bottom: 2px;
     border-style: solid;
     border-color: black;
@@ -248,13 +248,14 @@ form{
 
 .hover-container{
     position: relative;
-    display: inline-block;
     overflow: hidden;
 }
 
 .hover-container img{
     display: block;
     object-fit: cover;
+    max-width: 100%;
+    height: auto;
 }
 
 .overlay{
@@ -274,4 +275,12 @@ form{
 
 .overlay.active-overlay{
     opacity: 1;
+}
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
 }
