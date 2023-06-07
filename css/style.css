@@ -276,7 +276,7 @@ form{
 
 
 .confirma {
-    display: flex;
+    display: none;
     justify-content: center;
     bottom: 3rem;
     left: 3rem;
@@ -293,17 +293,7 @@ form{
     font-size: large;
   }
   
-  .success-message.show {
-    display: block;
-    animation: fade-out 3s forwards; /* Fade out animation */
-  }
-  
-  @keyframes fade-out {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      display: none;
-    }
-  }
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s;
+}

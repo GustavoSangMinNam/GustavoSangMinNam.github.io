@@ -28,7 +28,8 @@
         <input type="checkbox" name="cons" value="PC"> PC<br>
         <input type="submit" value="Enviar" disabled>
     </form>
-    <ul class="confirma">Suas preferências foram salvas</ul>
+    <ul class="confirma" id="mensagem-confirmacao" hidden>Suas preferências foram salvas</ul>
+
 
 
     <ul class="menu teko" id="navbar">
@@ -36,5 +37,20 @@
         <li><a href="../comunidades/comunidades.html"><img src="../images/comunidades.png" height= 50 alt="Comunidades"></a></li>
         <li><a href="../preferencias/preferenciasbase.html"><img src="../images/preferencias.png" height= 50 alt="Preferências"></a></li>
     </ul>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio do formulário
+            showConfirmation();
+        });
+
+        function showConfirmation() {
+            var confirmationMessage = document.getElementById('mensagem-confirmacao');
+            confirmationMessage.removeAttribute('hidden');
+            setTimeout(function() {
+                confirmationMessage.setAttribute('hidden', '');
+            }, 3000); // Tempo em milissegundos (3 segundos)
+        }
+    </script>
 </body>
 </html>
