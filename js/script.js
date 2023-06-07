@@ -1,26 +1,5 @@
-function check_full() {
-  var checkboxes = document.querySelectorAll('input[type="checkbox"]');
-  var enviarButton = document.querySelector('input[type="submit"]');
-
-  function updateButtonState() {
-    var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-    enviarButton.disabled = checkedCheckboxes.length === 0;
-  }
-
-  checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener('change', updateButtonState);
-  });
-
-  updateButtonState();
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-  check_full();
-  updateButtonState();
-});
-
-
-var prevScrollpos = window.pageYOffset;
+  var prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
@@ -30,3 +9,28 @@ var prevScrollpos = window.pageYOffset;
         }
         prevScrollpos = currentScrollPos;
       }
+
+  function limpa_pref(){
+    const checkall = document.querySelectorAll("input[type='checkbox']")
+    checkall.forEach((checkbox) => {
+      checkbox.checked = false
+    })
+  }
+
+  function mensagem(time){
+    const msg = document.querySelector('p')
+
+    msg.style.visibility = 'visible'
+
+    setTimeout(() =>{
+      msg.style.visibility = 'hidden' 
+    }, time)
+  }
+
+  sub = document.getElementById('envio')
+  sub.addEventListener('click', function() {
+    mensagem(3000)
+    limpa_pref()
+  })
+
+})

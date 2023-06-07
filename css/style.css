@@ -221,7 +221,6 @@ form{
     display: block;
     color: white;
     text-align: center;
-    padding: 15px;
     text-decoration: none;
   }
   
@@ -291,6 +290,7 @@ form{
     color: #000; /* Black text color */
     font-family: 'Teko', sans-serif;
     font-size: large;
+    visibility: hidden;
   }
   
 .fade-out {
