@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Rokkitt&family=Sanchez&family=Teko&display=swap" rel="stylesheet">
     <title>Preferências: Consoles</title>
-    <script src="../js/js.js"></script>
 </head>
 <body class="bodycolor">
     <header class="teko1"><a href="../index.html">LFG</a></header>
@@ -20,7 +19,7 @@
             Selecione seus consoles favoritos:
         </li>
     </ul>
-    <form class="rokkitt">
+    <form class="rokkitt" id="myForm">
         <input type="checkbox" name="cons" value="Xbox One"> Xbox One<br>
         <input type="checkbox" name="cons" value="Xbox Series S/X"> Xbox Series S/X<br>
         <input type="checkbox" name="cons" value="Playstation 5"> Playstation 5<br>
@@ -31,26 +30,45 @@
     <ul class="confirma" id="mensagem-confirmacao" hidden>Suas preferências foram salvas</ul>
 
 
-
     <ul class="menu teko" id="navbar">
         <li><a href='../noticias/noticias.html'><img src="../images/noticias.png" height= 50 alt="Notícias"></a></li>
         <li><a href="../comunidades/comunidades.html"><img src="../images/comunidades.png" height= 50 alt="Comunidades"></a></li>
         <li><a href="../preferencias/preferenciasbase.html"><img src="../images/preferencias.png" height= 50 alt="Preferências"></a></li>
     </ul>
-
     <script>
-        document.getElementById('myForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Previne o envio do formulário
-            showConfirmation();
-        });
-
-        function showConfirmation() {
-            var confirmationMessage = document.getElementById('mensagem-confirmacao');
-            confirmationMessage.removeAttribute('hidden');
-            setTimeout(function() {
-                confirmationMessage.setAttribute('hidden', '');
-            }, 3000); // Tempo em milissegundos (3 segundos)
+        function check_full() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var enviarButton = document.querySelector('input[type="submit"]');
+        
+            function updateButtonState() {
+                var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+                enviarButton.disabled = checkedCheckboxes.length === 0;
+            }
+        
+            checkboxes.forEach(function(checkbox) {
+                checkbox.addEventListener('change', updateButtonState);
+            });
+        
+            updateButtonState();
         }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            check_full();
+            updateButtonState();
+            
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                showConfirmation();
+            });
+        
+            function showConfirmation() {
+                var confirmationMessage = document.getElementById('mensagem-confirmacao');
+                confirmationMessage.removeAttribute('hidden');
+                setTimeout(function() {
+                    confirmationMessage.setAttribute('hidden', '');
+                }, 3000);
+            }
+        });
     </script>
 </body>
 </html>
