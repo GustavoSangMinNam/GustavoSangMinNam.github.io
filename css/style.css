@@ -149,6 +149,11 @@ form{
     border-color: black;
 }
 
+.bt{
+    display: flex;
+    font-size: large;
+}
+
 .preferences-base li{
     margin: .5rem;
 }
