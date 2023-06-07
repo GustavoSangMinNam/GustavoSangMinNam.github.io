@@ -31,16 +31,6 @@ header.store{
 
 }
 
-form{
-    font-size: xx-large;
-}
-
-.msg-select{
-    display: flex;
-    justify-content: center;
-    font-size: large;
-}
-
 .filler{
     margin: 2rem;
 }
@@ -139,7 +129,6 @@ form{
 }
 
 .preferences-base{
-    font-size: xx-large;
     margin: 1rem;
     padding: 2rem;
     list-style: circle;
@@ -147,11 +136,6 @@ form{
     border-style: solid;
     border-radius: 6px;
     border-color: black;
-}
-
-.bt{
-    display: flex;
-    font-size: large;
 }
 
 .preferences-base li{
@@ -312,4 +296,8 @@ form{
 .fade-out {
     opacity: 0;
     transition: opacity 0.5s;
+}
+
+.marlef {
+    margin-left: 1rem;
 }
