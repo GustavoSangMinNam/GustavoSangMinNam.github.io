@@ -10,14 +10,11 @@ body{
 }
 
 header{
+    width: 100%;
     font-size: 500%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
 }
 
 header a:first-child{
@@ -95,6 +92,7 @@ img{
     border-style: solid;
     border-radius: 6px;
     border-color: black;
+    background-color: #fff; /* Primeira ideia de como deixar os fundos de cada sinopse */
 }
 
 .sinopse-list{
@@ -105,6 +103,7 @@ img{
     border-style: solid;
     border-radius: 6px;
     border-color: black;
+    background-color: #fff;
 }
 
 .sinopse-list li{
@@ -153,7 +152,7 @@ form{
 
 .rec{
     font-size: 150%;
-    margin: 1rem;
+    margin: .5rem;
     border-bottom: 2px;
     border-style: solid;
     border-color: black;
@@ -230,3 +229,47 @@ form{
     background-color: #ddd;
     color: black;
   }
+
+.page{
+    color: #fff;
+    font-size: xx-large;
+}
+
+.hover-container{
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-container img{
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.overlay.active-overlay{
+    opacity: 1;
+}
+
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+}
