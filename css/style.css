@@ -273,3 +273,37 @@ form{
     gap: 16px;
     padding: 16px;
 }
+
+
+.confirma {
+    display: flex;
+    justify-content: center;
+    bottom: 3rem;
+    left: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top:12rem;
+    background-color: #70de70; /* Green color */
+    border: 2px solid #000; /* Black border */
+    border-radius: 10px;
+    color: #000; /* Black text color */
+    font-family: 'Teko', sans-serif;
+    font-size: large;
+  }
+  
+  .success-message.show {
+    display: block;
+    animation: fade-out 3s forwards; /* Fade out animation */
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }

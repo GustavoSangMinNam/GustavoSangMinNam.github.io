@@ -26,7 +26,7 @@ var prevScrollpos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
           document.getElementById("navbar").style.bottom = "0";
         } else {
-          document.getElementById("navbar").style.bottom = "-100px";
+          document.getElementById("navbar").style.bottom = "-130px";
         }
         prevScrollpos = currentScrollPos;
       }
