@@ -76,20 +76,9 @@ img{
     flex-direction: row;
     align-items: center;
     transition: top 0.3s ease-in-out;
-    justify-content: center; /* Adicionado */
+    justify-content: space-between; /* Adicionado */
     align-items: center; /* Adicionado */
 }
-
-.menu {
-    position: fixed;
-    bottom: 0;
-    
-    width: 100%;
-    height: 50px;
-    background-color: #000;
-    color: #fff;
-    
-  }
 
 
 .menu li{
