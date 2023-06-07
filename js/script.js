@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   sub = document.getElementById('envio')
   sub.addEventListener('click', function() {
-    mensagem(3000)
+    mensagem(2000)
     limpa_pref()
   })
 
